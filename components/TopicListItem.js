@@ -6,7 +6,7 @@ const TopicListItem = (props) => (
     <TouchableOpacity 
         style={styles.container}
         onPress = { () => {
-            //props.navigate('Transcript', {historyId: props.item.id})
+            props.navigate('Transcript', {historyId: props.item.id})
         }}
     >
         <View style={styles.infoContainer}>

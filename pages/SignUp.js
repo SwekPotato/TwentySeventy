@@ -87,6 +87,7 @@ class SignUp extends React.Component {
         console.log(this.state)
         const { goBack } = this.props.navigation
         return (
+            <View style={styles.container}>
             <KeyboardAwareView>
                 <TextInput
                     label="Username"
@@ -132,6 +133,7 @@ class SignUp extends React.Component {
                     <Button text="Sign Up" size={26} onPress={this.handleSignUp} />
                 </View>
             </KeyboardAwareView>
+            </View>
         )
     }
 }
@@ -141,6 +143,9 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",
         justifyContent: "space-around",
+    },
+    container: {
+        backgroundColor: '#99CCFF',
     },
 })
 

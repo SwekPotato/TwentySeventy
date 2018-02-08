@@ -10,24 +10,46 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 const History = (props) => (
     <View>
         <View style={styles.buttonContainer}>
-    </View>
         <Title text="History"/>
+        </View>
+        <View style={styles.container}>
         <FlatList 
             style={styles.list}
             data={[
                 {
                     key: 1,
                     teacher:'https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png', 
-                    topic:'food',
+                    topic:'Food',
                     date:'1/3/17',
-                    id: 'CheeseMelon',
+                    id: 'Melon',
                 },
                 {
                     key: 2,
                     teacher:'https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png', 
-                    topic:'bathroom',
+                    topic:'Hobby',
                     date:'12/1/17',
-                    id: 'BootySickle',
+                    id: 'Reading',
+                },
+                {
+                    key: 3,
+                    teacher:'https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png', 
+                    topic:'Education',
+                    date:'12/1/17',
+                    id: 'Math',
+                },
+                {
+                    key: 4,
+                    teacher:'https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png', 
+                    topic:'Movies',
+                    date:'12/1/17',
+                    id: 'Despicable Me',
+                },
+                {
+                    key: 5,
+                    teacher:'https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png', 
+                    topic:'Sports',
+                    date:'12/1/17',
+                    id: 'Football',
                 }
             ]}
             renderItem={ ( itemProps ) => (  
@@ -37,6 +59,7 @@ const History = (props) => (
                 />
             )}
         />
+        </View>
     </View>
 )
 
@@ -47,9 +70,11 @@ History.navigationOptions = {
 }
 const styles = StyleSheet.create ({
     buttonContainer: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+    },
+    container: {
+        backgroundColor: '#99CCFF',
     }
 })
 

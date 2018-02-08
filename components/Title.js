@@ -19,7 +19,7 @@ Renders with
 
 const styles = StyleSheet.create({
     title : {
-        fontSize : 80,
+        fontSize : 50,
     },
 })
 

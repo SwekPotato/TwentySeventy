@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-around',
+    backgroundColor: '#99CCFF',
   },
   buttonContainer: {
     alignItems: 'center',

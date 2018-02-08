@@ -10,6 +10,7 @@ const Dropdowninput = (props) => (
         <Select 
             selected={props.value}
             onSelect={props.onChange}
+            style={styles.optionContainer}
         >
             {props.options.map(element => (
                 <Option key={element} value={element}>{element}</Option>
@@ -28,7 +29,10 @@ Dropdowninput.propTypes = {
 const styles = StyleSheet.create ({
     container: {
         margin: 10,
-    }
+    },
+    optionContainer: {
+        backgroundColor: '#FFFFFF',
+    },
 })
 
 export default Dropdowninput

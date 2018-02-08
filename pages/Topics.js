@@ -27,7 +27,7 @@ class Topics extends React.Component {
     }
 
     render = () => (
-        <View>
+        <View style={styles.container}>
             <Title text="Topics"/>
             <FlatList
                 style={styles.list}
@@ -51,8 +51,12 @@ Topics.navigationOptions = {
 }
 const styles = StyleSheet.create ({
     list: {
-
+        backgroundColor: '#99CCFF',
     },
+    container: {
+        alignItems: 'center',
+        justifyContent: 'space-around',
+    }
 })
 
 export default Topics

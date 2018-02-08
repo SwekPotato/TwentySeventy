@@ -10,8 +10,8 @@ class LogIn extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            email: '',
-            password: '',
+            email: 'Bob@gmail.com',
+            password: 'A',
         }
         if (props.navigation && props.navigation.state && props.navigation.state.params) {
             this.state.email = props.navigation.state.params.email
@@ -82,6 +82,7 @@ const styles = StyleSheet.create({
     },
     container: {
         flex: 1,
+        backgroundColor: '#99CCFF',
     }
 })
 
